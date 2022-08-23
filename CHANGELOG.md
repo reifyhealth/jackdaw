@@ -3,6 +3,7 @@
 ### Unreleased
 
 - Add `divert` stream operation
+- Fix inability to materialize without supplying a topic name
 - Fix type union coercion fails when record types come before others
 
 ### [0.9.6] - [2022-08-01]
