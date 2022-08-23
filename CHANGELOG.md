@@ -3,6 +3,7 @@
 ### Unreleased
 
 - Add `divert` stream operation
+- Fix type union coercion fails when record types come before others
 
 ### [0.9.6] - [2022-08-01]
 
