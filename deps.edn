@@ -1,9 +1,9 @@
 {:deps
  {aleph/aleph {:mvn/version "0.4.6"}
-  danlentz/clj-uuid {:mvn/version "0.1.9" :exclusions [primitive-math]}
+  danlentz/clj-uuid {:mvn/version "0.1.9" :exclusions [primitive-math/primitive-math]}
   io.confluent/kafka-schema-registry-client {:mvn/version "6.1.1" :exclusions [com.fasterxml.jackson.core/jackson-databind]}
   io.confluent/kafka-avro-serializer {:mvn/version "6.1.1"}
-  io.confluent/kafka-json-schema-serializer {:mvn/version "6.1.1"}
+  io.confluent/kafka-json-schema-serializer {:mvn/version "6.1.1" :exclusions [com.github.everit-org.json-schema/org.everit.json.schema]}
   org.apache.kafka/kafka-clients {:mvn/version "2.8.0"}
   org.apache.kafka/kafka-streams {:mvn/version "2.8.0"}
   org.apache.kafka/kafka-streams-test-utils {:mvn/version "2.8.0"}
@@ -21,4 +21,7 @@
   io.netty/netty-handler-proxy {:mvn/version "4.1.68.Final"}
   io.netty/netty-resolver {:mvn/version "4.1.68.Final"}
   io.netty/netty-resolver-dns {:mvn/version "4.1.68.Final"}
-  org.apache.commons/commons-compress {:mvn/version "1.21"}}}
+  org.apache.commons/commons-compress {:mvn/version "1.21"}
+  ;; avoids needing to use mulesoft/jitpack to grab this dep
+  com.github.erosb/everit-json-schema {:mvn/version "1.14.1"}}
+ :mvn/repos {"confluent" {:url "https://packages.confluent.io/maven/"}}}
