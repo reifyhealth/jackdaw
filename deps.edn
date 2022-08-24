@@ -1,9 +1,9 @@
 {:deps
  {aleph/aleph {:mvn/version "0.4.6"}
   danlentz/clj-uuid {:mvn/version "0.1.9" :exclusions [primitive-math/primitive-math]}
-  io.confluent/kafka-schema-registry-client {:mvn/version "6.1.1" :exclusions [com.fasterxml.jackson.core/jackson-databind]}
-  io.confluent/kafka-avro-serializer {:mvn/version "6.1.1"}
-  io.confluent/kafka-json-schema-serializer {:mvn/version "6.1.1" :exclusions [com.github.everit-org.json-schema/org.everit.json.schema]}
+  io.confluent/kafka-schema-registry-client {:mvn/version "6.2.6" :exclusions [com.fasterxml.jackson.core/jackson-databind]}
+  io.confluent/kafka-avro-serializer {:mvn/version "6.2.6"}
+  io.confluent/kafka-json-schema-serializer {:mvn/version "6.2.6" :exclusions [com.github.everit-org.json-schema/org.everit.json.schema]}
   org.apache.kafka/kafka-clients {:mvn/version "2.8.0"}
   org.apache.kafka/kafka-streams {:mvn/version "2.8.0"}
   org.apache.kafka/kafka-streams-test-utils {:mvn/version "2.8.0"}
